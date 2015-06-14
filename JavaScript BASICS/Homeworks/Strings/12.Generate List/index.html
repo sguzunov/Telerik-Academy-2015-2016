@@ -1,0 +1,24 @@
+<html>
+	<head>
+	<title>Generate List</title>
+	<script type="text/javascript" src="generateList.js"></script>
+	<style>
+	button{
+		width:70px;
+		height: 30px;
+		background-color: blue;
+		color:yellow;
+	}
+	
+	div{
+		display: none;
+	}
+	</style>
+	</head>
+	<body>
+		<div data-type="template" id="list-item">
+ 			<strong>-{name}-</strong> <span>-{age}-</span>
+		</div>
+		<button onclick="createList()">Generate</button>
+	</body>
+</html>

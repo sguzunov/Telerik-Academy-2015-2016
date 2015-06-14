@@ -1,0 +1,26 @@
+﻿table {
+   border-collapse:collapse; 
+   border:2px solid;                                    
+}        
+td {
+    border:none;
+}
+th {
+    border-bottom:2px solid;
+}
+img {
+    width:100px;
+    height:80px;
+}
+.ssd {
+vertical-align:bottom;
+}
+a {
+    font-size:20px;                    
+}
+a:link {
+        color:#66CCFF;
+ }
+fieldset {
+    border:2px solid;
+}        

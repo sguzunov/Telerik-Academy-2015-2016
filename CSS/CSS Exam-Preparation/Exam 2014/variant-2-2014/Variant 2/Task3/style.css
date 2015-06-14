@@ -1,0 +1,74 @@
+﻿html,
+body,
+div,
+h1,
+label,
+input,
+span,
+ul,
+li,
+button {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-size: 14px;
+  font-family: Corbel;
+}
+body #root {
+  width: 350px;
+  border-left: 3px solid #000;
+  border-top: 3px solid #000;
+  border-radius: 15px 0 0 0;
+  margin: 5px;
+  padding-top: 25px;
+  padding-left: 25px;
+}
+#root h1 {
+  font-size: 1.9em;
+  padding-left: 45px;
+}
+#root ul {
+  display: none;
+}
+#root .box {
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 5px;
+  background: #cbf7be;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #cbf7be 20%, #e5d96e 70%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(20%, #cbf7be), color-stop(70%, #e5d96e));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #cbf7be 20%, #e5d96e 70%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #cbf7be 20%, #e5d96e 70%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #cbf7be 20%, #e5d96e 70%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #cbf7be 20%, #e5d96e 70%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from-color', endColorstr='@to-color', GradientType=0);
+  /* IE6-9 */
+}
+#root .add-employee {
+  margin: 0;
+  padding: 15px;
+  text-align: right;
+}
+#root .add-employee > * {
+  padding: 5px;
+}
+#root .add-employee label {
+  font-weight: bold;
+}
+#root .add-employee input {
+  border: 3px inset #CBF7BE;
+  border-radius: 5px;
+  padding: 5px 15px;
+  background: none;
+  margin-bottom: 5px;
+  width: 150px;
+}
+/*# sourceMappingURL=style.css.map */

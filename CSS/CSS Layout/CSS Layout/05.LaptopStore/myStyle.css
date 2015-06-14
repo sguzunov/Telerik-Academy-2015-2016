@@ -1,0 +1,82 @@
+﻿body, div, header, nav, article, fieldset, legend, p {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    width: 950px;
+    height: 620px;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    font-size: 16px;
+    font-family: Arial;
+}
+
+header {
+    font-family: Arial;
+    font-size: 1.8em;
+    font-weight: bold;
+    text-align: center;
+}
+
+    header nav a {
+        color: #15B5F1;
+    }
+
+hr {
+    width: 95%;
+    height: 2px;
+    background-color: black;
+    border: none;
+}
+
+#laptops {
+    float: left;
+}
+
+article {
+    border: 2px solid black;
+    width: 635px;
+}
+
+fieldset {
+    display: inline-block;
+    width: 300px;
+    height: 170px;
+    margin: 5px;
+    border: 2px solid black;
+    font-size: 1.3em;
+}
+
+    fieldset p {
+        display: inline-block;
+    }
+
+legend {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+fieldset img {
+    margin: 5px;
+}
+
+.ssd-memory {
+    margin-bottom: 170px;
+}
+
+#choice {
+    font-size: 1.7em;
+    text-align: center;
+    padding-top: 90px;
+}
+
+    #choice div p {
+        margin: 10px;
+    }
+
+.type-processor {
+    margin-top: 20px;
+    margin-left: 25px;
+}

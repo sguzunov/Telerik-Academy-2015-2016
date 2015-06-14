@@ -1,0 +1,68 @@
+﻿html,
+body,
+div,
+ul,
+li,
+a,
+img,
+span,
+strong {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Courier New', Courier, 'Nimbus Mono L', monospace;
+  font-size: 16px;
+  color: #8D7782;
+}
+body #wrapper {
+  width: 960px;
+}
+body #wrapper img {
+  width: 15px;
+}
+body #wrapper .notification-list {
+  list-style-type: none;
+  margin-top: 25px;
+  margin-left: 25px;
+  width: 470px;
+  border: 1px solid #000;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom: none;
+  background: #ababab;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #ababab 0, #dddddd 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #ababab), color-stop(100%, #dddddd));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #ababab 0, #dddddd 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #ababab 0, #dddddd 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #ababab 0, #dddddd 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #ababab 0, #dddddd 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from-col', endColorstr='@to-col', GradientType=0);
+  /* IE6-9 */
+}
+body #wrapper .notification-list > li {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  display: inline;
+}
+body #wrapper .notification-list > li > a {
+  text-decoration: none;
+  color: #8D7782;
+}
+body #wrapper .notification-list > li:last-of-type {
+  border-right: none;
+}
+body #wrapper .notification-list > li .content {
+  display: none;
+}
+body #wrapper .notification-list li {
+  display: inline-block;
+}
+/*# sourceMappingURL=style.css.map */

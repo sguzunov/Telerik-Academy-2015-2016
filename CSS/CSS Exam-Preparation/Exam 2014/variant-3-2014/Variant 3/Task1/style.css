@@ -1,0 +1,75 @@
+﻿html,
+body {
+  font-family: Tahoma, sans-serif;
+  font-size: 14px;
+}
+.clear {
+  clear: both;
+}
+html,
+body,
+div,
+header,
+ul,
+li,
+nav,
+h1,
+article,
+p {
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  width: 960px;
+  margin: 3px;
+}
+#wrapper #archive ul {
+  float: right;
+  list-style-type: none;
+  font-size: 10px;
+}
+#wrapper #archive ul li {
+  display: inline;
+  margin-left: 10px;
+}
+#wrapper #archive ul li a {
+  text-decoration: none;
+  color: #333333;
+}
+#wrapper #header {
+  background-image: url("/images/header-bg.png");
+  background-repeat: repeat;
+  color: #fff;
+  padding: 15px 0 15px 0;
+}
+#wrapper #header #nav {
+  float: left;
+  padding-top: 6px;
+  margin-left: 50px;
+}
+#wrapper #header #nav ul {
+  list-style-type: none;
+}
+#wrapper #header #nav ul li {
+  text-transform: capitalize;
+  display: inline;
+  font-size: 18px;
+  margin-right: 20px;
+}
+#wrapper #header #nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+#wrapper #header h1 {
+  font-size: 28px;
+  margin-left: 645px;
+}
+#wrapper #content h1 {
+  font-size: 24px;
+  padding: 15px 0 15px 0;
+}
+#wrapper #content article p {
+  text-align: justify;
+  margin-bottom: 15px;
+}
+/*# sourceMappingURL=style.css.map */

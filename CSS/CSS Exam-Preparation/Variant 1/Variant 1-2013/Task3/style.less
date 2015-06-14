@@ -1,0 +1,119 @@
+﻿/*
+    
+
+*/
+
+html, body, div, h1, ul, li, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+.grad(@from-col,@from-pos,@to-col,@to-pos) {
+    background: @from-col; /* Old browsers */
+    background: -moz-linear-gradient(top, @from-col @from-pos, @to-col @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-col), color-stop(@to-pos,@to-col)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @from-col @from-pos,@to-col @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @from-col @from-pos,@to-col @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @from-col @from-pos,@to-col @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom, @from-col @from-pos,@to-col @to-pos); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-col', endColorstr='@to-col',GradientType=0 ); /* IE6-9 */
+}
+
+#wrapper {
+    width: 960px;
+    font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+    font-size: 16px;
+    color: #555555;
+
+    & > div {
+        .grad(#EEEEEE,0,#AAAAAA,100%);
+        border: 1px solid black;
+        border-radius: 15px;
+        margin-top: 30px;
+        margin-left: 30px;
+        width: 380px;
+        height: 463px;
+
+        h1 {
+            font-size: 1.8em;
+            text-align: center;
+            padding-top: 16px;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style-type: none;
+
+            p {
+                display: inline;
+            }
+
+            .me-item {
+                border: 1px solid #000;
+                border-radius: 15px;
+                padding: 5px 0 5px 15px;
+                width: 215px;
+                margin: 0 0 5px 133px;
+                .grad(#29EDFF,0,#C0FAFF,100%);
+
+                span:first-of-type {
+                    display: block;
+                    font-weight: bold;
+                    font-size: 1.1em;
+                }
+
+                .date {
+                    display: block;
+                    font-family: Consolas;
+                    font-size: 0.8em;
+                    margin-left: 80px;
+                }
+            }
+
+            .toshko-item {
+                border: 1px solid #000;
+                border-radius: 15px;
+                padding: 5px 0 5px 15px;
+                width: 215px;
+                margin: 0 0 5px 15px;
+                .grad(#DFFFD2,0,#6FFF3B,100%);
+
+                span:first-of-type {
+                    display: block;
+                    font-weight: bold;
+                    font-size: 1.1em;
+                    margin-left: 145px;
+                }
+
+                .date {
+                    display: block;
+                    font-family: Consolas;
+                    font-size: 0.8em;
+                }
+            }
+        }
+
+        input {
+            width: 275px;
+            height: 35px;
+            background-color:#eee;
+            border-style:none;
+            border-radius:5px;
+            margin-top:2px;
+            margin-left:15px;
+            padding-left:15px;
+        }
+
+        button{
+            padding:5px 15px;
+            .grad(#EDEDED,0,#AAAAAA,100%);
+            font-size:1.1em;
+            border-style:none;
+            border-radius:5px;
+
+            &:hover{
+                background:#EEEEEE;
+            }
+        }
+    }
+}

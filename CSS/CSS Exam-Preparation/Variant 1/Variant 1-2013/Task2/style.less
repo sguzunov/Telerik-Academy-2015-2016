@@ -1,0 +1,111 @@
+﻿html, body, div, ul, li, a, table, thead, tr, th, tbody, td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 960px;
+    font-family: Cambria, 'Times New Roman', 'Nimbus Roman No9 L', 'Freeserif', Times, serif;
+    font-size: 16px;
+}
+
+.grad(@from-col,@from-pos,@to-col,@to-pos) {
+    background: @from-col; /* Old browsers */
+    background: -moz-linear-gradient(top, @from-col @from-pos, @to-col @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-col), color-stop(@to-pos,@to-col)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @from-col @from-pos,@to-col @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @from-col @from-pos,@to-col @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @from-col @from-pos,@to-col @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom, @from-col @from-pos,@to-col @to-pos); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-col', endColorstr='@to-col',GradientType=0 ); /* IE6-9 */
+}
+
+#wrapper {
+    .tab-strip {
+        margin-left: 15px;
+        margin-top: 15px;
+        list-style-type: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        width: 340px;
+        height: 225px;
+        color: black;
+        padding-top: 5px;
+
+        .current {
+            border: none;
+            background: none;
+            border-right: 1px solid black;
+            border-radius: 0;
+
+            a {
+                font-weight: bold;
+            }
+
+            &:last-of-type {
+                border: none;
+            }
+
+            .tab-content {
+                position: relative;
+                display: inline-block;
+                font-size:16px;
+
+                &>table{
+                    position: absolute;
+                    top: 25px;
+                    left: -155px;
+                    width:300px;
+                    .grad(#ABABAB,0,#EEEEEE,10%);
+                    border:1px solid black;
+                    border-collapse:collapse;
+                    th{
+                        border:1px solid black;
+                    }
+                    td{
+                        border:1px solid black;
+                        text-align:left;
+                    }
+                }
+
+                & > ul {
+                    position: absolute;
+                    top: 25px;
+                    left: -55px;
+                    li{
+                        width:150px;
+                        font-size:16px;
+                        text-align:left;
+                        ul{
+                            margin-left:25px;
+                        }
+                    }
+                }
+            }
+        }
+
+        & > li {
+            display: inline;
+            padding: 5px 13px;
+            .grad(#EDEDED,10%,#ABABAB,80%);
+            text-align: center;
+            font-size: 1.4em;
+            border: 1px solid;
+            border-radius: 5px;
+            border-top: none;
+
+            a {
+                text-decoration: none;
+                color: black;
+            }
+
+            &:hover {
+                background: #EEE;
+            }
+
+            .tab-content {
+                display: none;
+            }
+        }
+    }
+}

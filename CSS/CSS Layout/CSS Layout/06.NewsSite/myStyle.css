@@ -1,0 +1,76 @@
+﻿body, div, header, nav, section, article, p {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+
+#container {
+    background-color: #1E3741;
+    display: inline-block;
+    height: 300px;
+    border: 1px solid #759EB7;
+    border-radius: 5px;
+    padding: 5px 15px 15px 0;
+}
+
+nav ul {
+    list-style-type: none;
+    display: inline;
+}
+
+    nav ul li {
+        display: inline-block;
+        background-color: #4B5F67;
+        font-size: 0.8em;
+        padding: 7px;
+        font-family: "Arial-Black";
+    }
+
+li:first-child {
+    background-color: #1E3741;
+}
+
+a {
+    color: #729DBC;
+    text-decoration: none;
+}
+
+nav ul li#active-linkPage a {
+    color: white;
+}
+
+nav ul li#underlined-linkPage {
+    text-decoration: underline;
+}
+
+
+article {
+    width: 220px;
+    float: left;
+}
+
+h5 {
+    font-size: 0.8em;
+    font-weight: normal;
+    background-color: #00968C;
+    color: white;
+    padding: 8px;
+}
+
+    h5 strong#net-news {
+        font-weight: normal;
+    }
+
+article p {
+    font-size: 0.9em;
+    border-bottom: 1px solid #B3C4D0;
+    color: #B3C4D0;
+}
+
+    article p#without-border {
+        border-bottom: 1px solid #1E3741;
+    }
+
+img {
+    margin-top: 22px;
+}

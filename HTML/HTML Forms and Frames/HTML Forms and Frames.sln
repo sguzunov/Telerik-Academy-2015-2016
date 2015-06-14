@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.RegistrationForm", "01.RegistrationForm\01.RegistrationForm.csproj", "{B2A3AA9F-E72B-48BE-B4FE-4507CD3EA402}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.UniversityGrid", "02.UniversityGrid\02.UniversityGrid.csproj", "{04CA4809-D42A-436C-9E40-BFF8AB1495C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03.NotebookStore", "03.NotebookStore\03.NotebookStore.csproj", "{522AA165-4530-498D-9D5A-CDEBFF3EA37A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04.GridComponent", "04.GridComponent\04.GridComponent.csproj", "{F95F4510-1EF3-4B93-8DA9-2B3FD2819B76}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B2A3AA9F-E72B-48BE-B4FE-4507CD3EA402}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B2A3AA9F-E72B-48BE-B4FE-4507CD3EA402}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B2A3AA9F-E72B-48BE-B4FE-4507CD3EA402}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B2A3AA9F-E72B-48BE-B4FE-4507CD3EA402}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04CA4809-D42A-436C-9E40-BFF8AB1495C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04CA4809-D42A-436C-9E40-BFF8AB1495C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04CA4809-D42A-436C-9E40-BFF8AB1495C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04CA4809-D42A-436C-9E40-BFF8AB1495C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{522AA165-4530-498D-9D5A-CDEBFF3EA37A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{522AA165-4530-498D-9D5A-CDEBFF3EA37A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{522AA165-4530-498D-9D5A-CDEBFF3EA37A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{522AA165-4530-498D-9D5A-CDEBFF3EA37A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F95F4510-1EF3-4B93-8DA9-2B3FD2819B76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F95F4510-1EF3-4B93-8DA9-2B3FD2819B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F95F4510-1EF3-4B93-8DA9-2B3FD2819B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F95F4510-1EF3-4B93-8DA9-2B3FD2819B76}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

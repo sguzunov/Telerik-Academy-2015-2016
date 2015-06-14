@@ -1,0 +1,62 @@
+﻿html,
+body,
+div,
+ul,
+li,
+a,
+span {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', 'DejaVu Sans Condensed', sans-serif;
+  font-size: 16px;
+}
+#wrapper {
+  width: 960px;
+}
+#wrapper .msg-bar {
+  list-style-type: none;
+  margin-top: 210px;
+  margin-left: 50px;
+  border: 1px solid #000;
+  width: 450px;
+  background: #aaffef;
+  /* Old browsers */
+  background: -moz-linear-gradient(top, #aaffef 0, #13ffd2 100%);
+  /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #aaffef), color-stop(100%, #13ffd2));
+  /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top, #aaffef 0, #13ffd2 100%);
+  /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top, #aaffef 0, #13ffd2 100%);
+  /* Opera 11.10+ */
+  background: -ms-linear-gradient(top, #aaffef 0, #13ffd2 100%);
+  /* IE10+ */
+  background: linear-gradient(to bottom, #aaffef 0, #13ffd2 100%);
+  /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='@from-col', endColorstr='@to-col', GradientType=0);
+  /* IE6-9 */
+}
+#wrapper .msg-bar > li {
+  display: inline-block;
+  text-align: center;
+  padding: 5px 15px 0 15px;
+  position: relative;
+}
+#wrapper .msg-bar > li a {
+  text-decoration: none;
+  color: #0094FF;
+}
+#wrapper .msg-bar > li .msg-bar-content {
+  display: none;
+  position: absolute;
+}
+#wrapper .msg-bar > li:hover {
+  background: #00DDB3;
+  border-top: none;
+}
+#wrapper .msg-bar > li:hover .msg-bar-content {
+  display: block;
+}
+/*# sourceMappingURL=style.css.map */

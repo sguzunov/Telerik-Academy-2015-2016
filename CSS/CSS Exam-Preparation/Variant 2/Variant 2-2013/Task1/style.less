@@ -1,0 +1,102 @@
+﻿html, body, div, ul, li, a, h1, p, table, thead, tr, th, td, tbody {
+    margin: 0;
+    padding: 0;
+}
+
+.grad(@from-col,@from-pos,@to-col,@to-pos) {
+    background: @from-col; /* Old browsers */
+    background: -moz-linear-gradient(top, @from-col @from-pos, @to-col @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-col), color-stop(@to-pos,@to-col)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @from-col @from-pos,@to-col @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @from-col @from-pos,@to-col @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @from-col @from-pos,@to-col @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom, @from-col @from-pos,@to-col @to-pos); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-col', endColorstr='@to-col',GradientType=0 ); /* IE6-9 */
+}
+
+#wrapper {
+    width: 960px;
+    font-family: Helvetica, Arial, 'DejaVu Sans', 'Liberation Sans', Freesans, sans-serif;
+    font-size: 18px;
+
+    .accordion {
+        list-style-type: none;
+        border: 1px solid black;
+        margin: 50px;
+        width: 400px;
+
+        .current {
+            .accordion-content {
+                display: block;
+                color: #44445A;
+                font-size: 0.8em;
+                font-weight: normal;
+                margin: 5px 295px 5px 0;
+
+                h1 {
+                    text-align: center;
+                    width: 270px;
+                    font-size: 1.6em;
+                    margin: 12px 0 5px 65px;
+                }
+
+                p {
+                    text-align: justify;
+                    width: 380px;
+                    margin-left: 10px;
+                }
+
+                table {
+                    width: 360px;
+                    border: 1px solid #000;
+                    border-collapse: collapse;
+                    margin: 25px 0 20px 15px;
+                    font-size: 0.9em;
+
+
+                    thead {
+                        color: #444444;
+
+                        th {
+                            border: 1px solid #000;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                            .grad(#ECECEC,0,#898989,100%);
+                        }
+                    }
+
+                    tbody {
+                        color: #F2FFFF;
+
+                        td {
+                            border: 1px solid #000;
+                            padding-top: 5px;
+                            padding-bottom: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        li {
+            text-align: center;
+            border-bottom: 2px solid #000;
+            font-weight: bold;
+            font-size: 1.3em;
+            .grad(#EEEEEE,10%,#AAAAAA,70%);
+
+            &:last-of-type {
+                border: none;
+            }
+
+            a {
+                text-decoration: none;
+                color: #444;
+            }
+
+            .accordion-content {
+                display: none;
+            }
+        }
+    }
+}

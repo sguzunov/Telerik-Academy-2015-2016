@@ -1,0 +1,79 @@
+﻿html, body, div, ul, li, .img {
+    margin: 0;
+    padding: 0;
+}
+
+#wrapper {
+    width: 960px;
+    font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+    font-size: 16px;
+
+    .menu {
+        list-style-type: none;
+        margin: 5px;
+
+        .content {
+            display: none;
+            img{
+                display:none;
+            }
+        }
+
+        & > li {
+            background-color: #B6FF00;
+            border-radius: 15px;
+            text-align: center;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            width: 170px;
+            position: relative;
+
+            & > a {
+                text-decoration: none;
+                color: #000;
+            }
+
+            &:hover {
+                & > a {
+                    text-decoration: underline;
+                }
+
+                .content{
+                    display:block;
+
+                    .sub-menu{
+                        list-style-type:none;
+                        position:absolute;
+                        top:-10px;
+                        right:-550px;
+                        li{
+                            background-color:#008000;
+                            margin:10px;
+                            padding:20px;
+                            border-radius:10px;
+                            text-align:left;
+                            width:500px;
+                            a{
+                                color:white;
+                                text-decoration:none;
+                            }
+
+                            &:hover{
+                                a{
+                                    text-decoration:underline;
+                                }
+                                img{
+                                    display:block;
+                                    width:500px;
+                                    border-radius:10px;
+                                    margin-top:10px;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

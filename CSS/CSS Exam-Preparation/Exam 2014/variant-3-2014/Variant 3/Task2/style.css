@@ -1,0 +1,72 @@
+﻿html,
+body,
+div,
+ul,
+li,
+.img {
+  margin: 0;
+  padding: 0;
+}
+#wrapper {
+  width: 960px;
+  font-family: Constantina, Georgia, 'Nimbus Roman No9 L', serif;
+  font-size: 16px;
+}
+#wrapper .menu {
+  list-style-type: none;
+  margin: 5px;
+}
+#wrapper .menu .content {
+  display: none;
+}
+#wrapper .menu .content img {
+  display: none;
+}
+#wrapper .menu > li {
+  background-color: #B6FF00;
+  border-radius: 15px;
+  text-align: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  width: 170px;
+  position: relative;
+}
+#wrapper .menu > li > a {
+  text-decoration: none;
+  color: #000;
+}
+#wrapper .menu > li:hover > a {
+  text-decoration: underline;
+}
+#wrapper .menu > li:hover .content {
+  display: block;
+}
+#wrapper .menu > li:hover .content .sub-menu {
+  list-style-type: none;
+  position: absolute;
+  top: -10px;
+  right: -550px;
+}
+#wrapper .menu > li:hover .content .sub-menu li {
+  background-color: #008000;
+  margin: 10px;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: left;
+  width: 500px;
+}
+#wrapper .menu > li:hover .content .sub-menu li a {
+  color: white;
+  text-decoration: none;
+}
+#wrapper .menu > li:hover .content .sub-menu li:hover a {
+  text-decoration: underline;
+}
+#wrapper .menu > li:hover .content .sub-menu li:hover img {
+  display: block;
+  width: 500px;
+  border-radius: 10px;
+  margin-top: 10px;
+}
+/*# sourceMappingURL=style.css.map */

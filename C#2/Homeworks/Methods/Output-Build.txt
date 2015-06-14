@@ -1,0 +1,3 @@
+﻿1>------ Build started: Project: 15.NumberCalculations, Configuration: Debug Any CPU ------
+1>  15.NumberCalculations -> D:\Telerik\C#2 homeworks\Methods\15.NumberCalculations\bin\Debug\15.NumberCalculations.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

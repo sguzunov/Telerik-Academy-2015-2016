@@ -1,0 +1,100 @@
+﻿html, body, div, form, fieldset, label, input, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Verdana, Geneva, 'DejaVu Sans', sans-serif;
+    font-size: 16px;
+}
+
+.grad(@from-col,@from-pos,@to-col,@to-pos) {
+    background: @from-col; /* Old browsers */
+    background: -moz-linear-gradient(top, @from-col @from-pos, @to-col @to-pos); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-pos,@from-col), color-stop(@to-pos,@to-col)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @from-col @from-pos,@to-col @to-pos); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @from-col @from-pos,@to-col @to-pos); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @from-col @from-pos,@to-col @to-pos); /* IE10+ */
+    background: linear-gradient(to bottom, @from-col @from-pos,@to-col @to-pos); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-col', endColorstr='@to-col',GradientType=0 ); /* IE6-9 */
+}
+
+
+#wrapper {
+    width: 960px;
+
+    form {
+        border: 1px solid #333;
+        border-radius: 15px;
+        margin-left: 25px;
+        margin-top: 25px;
+        width: 380px;
+        height: 335px;
+        .grad(#68D1FF,0,#8CFFFB,100%);
+        padding-top: 15px;
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: right;
+
+        fieldset {
+            border: 3px solid #000;
+            border-radius: 5px;
+            text-align: right;
+            padding-right: 15px;
+            padding-bottom: 5px;
+            width: 360px;
+
+            legend {
+                font-size: 1.3em;
+                font-style: italic;
+                padding-left: 17px;
+                padding-right: 15px;
+                margin-bottom: 5px;
+            }
+
+            label {
+                color: #333333;
+            }
+
+            input {
+                background: none;
+                border: 1px solid #008FCE;
+                border-radius: 5px;
+                .grad(#69D2FF,0,#8BFEFB,100%);
+                padding-top: 5px;
+                padding-bottom: 5px;
+                padding-left: 15px;
+                margin-top: 1px;
+                height: 16px;
+                width: 165px;
+            }
+
+            #tb-age {
+                width: 40px;
+                padding-left: 4px;
+            }
+
+            &:last-of-type {
+                margin-bottom: 3px;
+            }
+        }
+
+        button {
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border: none;
+            border-bottom: 1px solid #000;
+            border-radius: 5px;
+            .grad(#69D2FF,0,#8BFEFB,100%);
+        }
+
+        input[type=reset] {
+            font-size: 1.1em;
+            padding: 5px 10px;
+            border: none;
+            border-bottom: 1px solid #000;
+            border-radius: 5px;
+            .grad(#69D2FF,0,#8BFEFB,100%);
+        }
+    }
+}

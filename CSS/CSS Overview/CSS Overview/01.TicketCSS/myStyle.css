@@ -1,0 +1,50 @@
+﻿table {
+    background-color:#595959;
+    width:220px;
+    font-family:Arial;
+    font-size:8px;  
+    color:#B6B7B6;  
+}
+
+th {
+    text-align:left;
+    font-weight:normal;
+    color:#B6B7B6;
+    font-size:14px;
+}
+
+td {
+    padding:5px;
+    text-align:left;
+}
+                                                             
+table tbody tr td:first-child {
+    font-size:8px;
+    color:#DEEBF0;
+    font-style:italic;
+}
+
+a {
+    text-decoration:none;
+    color:#BEC088;
+}
+
+#full-name {
+     color:#BEC088;    
+}
+
+#dot {
+    font-size:12px;
+    color:green;
+}
+#user-activity {
+    color:red;
+    font-weight:bold;
+}
+#status-id {
+    font-weight:bold;
+        color:orange;
+}
+#top-position {
+    vertical-align:top;
+}

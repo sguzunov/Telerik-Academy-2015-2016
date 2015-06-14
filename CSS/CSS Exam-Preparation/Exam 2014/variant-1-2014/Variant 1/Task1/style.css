@@ -1,0 +1,66 @@
+﻿html,
+body {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#wrapper {
+  width: 960px;
+}
+.clear {
+  clear: both;
+}
+body,
+div header,
+h1,
+nav,
+ul,
+li,
+article,
+object {
+  margin: 0;
+  padding: 0;
+}
+body header {
+  background-image: url("header-bg.png");
+  background-repeat: repeat;
+}
+body header h1 {
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 15px;
+  float: left;
+}
+body header #nav {
+  float: right;
+}
+body header #nav ul {
+  padding: 15px;
+}
+body header #nav ul li {
+  display: inline;
+  font-size: 14px;
+  padding: 8px;
+}
+body #searchBar {
+  background-color: #000;
+  color: #C6C6C6;
+  padding: 8px;
+}
+body #searchBar a {
+  color: #C6C6C6;
+  text-decoration: none;
+  font-size: 14px;
+}
+body #searchBar #archives {
+  float: left;
+}
+body #searchBar #search {
+  float: right;
+}
+body #content {
+  font-size: 14px;
+  padding-top: 15px;
+}
+body #content h1 {
+  font-size: 24px;
+}
+/*# sourceMappingURL=style.css.map */

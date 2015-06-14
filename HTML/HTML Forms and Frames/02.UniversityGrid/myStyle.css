@@ -1,0 +1,11 @@
+﻿.total {
+    text-align:center;
+    font-weight:bold;
+}
+table {
+    border-collapse:collapse;
+    width:620px;
+}
+td {
+    padding:4px;
+}

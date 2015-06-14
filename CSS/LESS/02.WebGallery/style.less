@@ -1,0 +1,39 @@
+﻿body, nav, label, img, input {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+
+    section {
+        padding: 15px;
+        text-align: center;
+
+        label {
+            img:first-of-type {
+                width: 200px;
+                height: 150px;
+            }
+
+            img:last-of-type {
+                width: 450px;
+                height: 350px;
+                position: absolute;
+                top: 350px;
+                left: 550px;
+                border: 1px solid #000000;
+                border-radius: 5px;
+                display: none;
+            }
+        }
+
+        input {
+            display: none;
+        }
+
+        input:checked + label img:last-of-type {
+            display: block;
+        }
+    }
+}

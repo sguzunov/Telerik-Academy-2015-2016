@@ -1,0 +1,291 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us">
+<head>
+    <title>Grid Components</title>
+    <link rel="stylesheet" type="text/css" href="mystyle.css"/>
+</head>
+<body>    
+     <table>
+         <thead>
+             <tr>
+                 <td colspan="6">
+                     Drag a column header and drop it here to group by that column
+                 </td>
+             </tr>         
+             <tr>
+                 <td id="firstColumn">
+                     Product ID
+                 </td>
+                 <td id="secondColumn">
+                     Product name
+                 </td>
+                 <td id="thirdColumn">
+                     Unit price
+                 </td>
+                 <td id="fourthColumn">
+                     Quantity per unit
+                 </td>
+                 <td id="fifthColumn">
+                     Units in stock
+                 </td>
+                 <td id="sixthColumn">
+                     Discontinued
+                 </td>
+             </tr>
+             </thead>
+         <tfoot>
+             <tr>  
+                 <td colspan="6" id="footerCell">              
+                   <button id="firstPage"></button>
+                   <button id="prevPage"></button>                
+                      <a href="#">1</a>
+                      <a href="#">2</a>
+                      <a href="#">3</a>
+                      <a href="#">4</a>
+                      <a href="#">5</a>
+                      <a href="#">6</a>
+                      <a href="#">7</a>
+                      <a href="#">8</a>
+                      <a href="#">9</a>
+                      <a href="#">10</a>
+                      <a href="#">...</a> 
+                   <button id="nextPage"></button>
+                   <button id="lastPage"></button>                   
+                     Page size: 
+                     <select>
+                         <option>5</option>
+                         <option selected="selected">10</option>
+                         <option>15</option>
+                     </select>    
+                       <span id="status">335104 items in 33511 pages   </span>                  
+                  </td> 
+             </tr>
+         </tfoot>
+         <tbody>
+             <tr>
+                 <td class="insert">
+                     <input type="text" style="width:30px"/>
+                 </td>
+                 <td class="insert">
+                     <input type="text"/>
+                 </td>
+                 <td class="insert">
+                     <input type="text" style="width:90px"/>
+                     <button class="curious"></button>
+                 </td>
+                 <td class="insert">
+                     <input type="text" style="width:90px"/>
+                 </td>
+                 <td class="insert">
+                     <input type="text"/ style="width:90px"/>
+                     <button class="curious"></button>
+                 </td>
+                 <td class="insert">
+                     <input type="checkbox"/>
+                     <button class="curious"></button>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                    <p>1</p> 
+                 </td>
+                 <td>
+                    <p>Chai</p> 
+                 </td>
+                 <td>
+                     <p>$18.00</p>   
+                 </td>
+                 <td>
+                     <p>10 boxes x 20 bags</p>   
+                 </td>
+                 <td>
+                     <p>39</p>  
+                 </td>
+                 <td class="checkBoxes">
+                     <input type="checkbox" disabled="disabled"/>
+                 </td>
+             </tr>
+              <tr>
+                 <td>
+                    <p>2</p> 
+                 </td>
+                 <td>
+                    <p>Chang</p> 
+                 </td>
+                 <td>
+                     <p>$19.00</p>   
+                 </td>
+                 <td>
+                     <p>24-12 oz bottles</p>   
+                 </td>
+                 <td>
+                     <p>17</p>  
+                 </td>
+                 <td class="checkBoxes">
+                     <input type="checkbox" disabled="disabled"/>
+                 </td>
+             </tr>
+              <tr>
+                 <td>
+                    <p>3</p> 
+                 </td>
+                 <td>
+                    <p>Aniseed Syrup</p> 
+                 </td>
+                 <td>
+                     <p>$10.00</p>   
+                 </td>
+                 <td>
+                     <p>12-550 ml bottles</p>   
+                 </td>
+                 <td>
+                     <p>13</p>  
+                 </td>
+                 <td class="checkBoxes">
+                     <input type="checkbox" disabled="disabled"/>
+                 </td>
+             </tr>
+              <tr>
+                 <td>
+                    <p>4</p> 
+                 </td>
+                 <td>
+                    <p>Chef Anton's Cajun Seasoning</p> 
+                 </td>
+                 <td>
+                     <p>$22.00</p>   
+                 </td>
+                 <td>
+                     <p>48-6 oz jars</p>   
+                 </td>
+                 <td>
+                     <p>53</p>  
+                 </td>
+                 <td class="checkBoxes">
+                     <input type="checkbox" disabled="disabled"/>
+                 </td>
+             </tr>
+              <tr>
+                 <td>
+                    <p>5</p> 
+                 </td>
+                 <td>
+                    <p>Chef Anton's Gumbo Mix</p> 
+                 </td>
+                 <td>
+                     <p>$21.35</p>   
+                 </td>
+                 <td>
+                     <p>36 boxes</p>   
+                 </td>
+                 <td>
+                     <p>0</p>  
+                 </td>
+                 <td class="checkBoxes">
+                     <input type="checkbox" checked="checked" disabled="disabled"/>
+                 </td>
+             </tr>
+              <tr>
+                 <td>
+                    <p>6</p> 
+                 </td>
+                 <td>
+                    <p>Grandma's Bousenberry Spread</p> 
+                 </td>
+                 <td>
+                     <p>$25.00</p>   
+                 </td>
+                 <td>
+                     <p>12-8 oz jars</p>   
+                 </td>
+                 <td>
+                     <p>120</p>  
+                 </td>
+                 <td class="checkBoxes">
+                     <input type="checkbox" disabled="disabled"/>
+                 </td>
+             </tr>
+              <tr>
+                 <td>
+                    <p>7</p> 
+                 </td>
+                 <td>
+                    <p>Uncle Bob's Organic Dried Pears</p> 
+                 </td>
+                 <td>
+                     <p>$30.00</p>   
+                 </td>
+                 <td>
+                     <p>12-1 lb pkgs.</p>   
+                 </td>
+                 <td>
+                     <p>15</p>  
+                 </td>
+                 <td class="checkBoxes">
+                     <input type="checkbox" disabled="disabled"/>
+                 </td>
+             </tr>
+              <tr>
+                 <td>
+                    <p>8</p> 
+                 </td>
+                 <td>
+                    <p>Northwoods Charberry Sauce</p> 
+                 </td>
+                 <td>
+                     <p>$40.00</p>   
+                 </td>
+                 <td>
+                     <p>12-12 oz jars</p>   
+                 </td>
+                 <td>
+                     <p>6</p>  
+                 </td>
+                 <td class="checkBoxes">
+                     <input type="checkbox" disabled="disabled"/>
+                 </td>
+             </tr>
+              <tr>
+                 <td>
+                    <p>9</p> 
+                 </td>
+                 <td>
+                    <p>Mishi Kobe Niku</p> 
+                 </td>
+                 <td>
+                     <p>$97.00</p>   
+                 </td>
+                 <td>
+                     <p>18-500 g pkgs.</p>   
+                 </td>
+                 <td>
+                     <p>29</p>  
+                 </td>
+                 <td class="checkBoxes">
+                     <input type="checkbox" checked="checked" disabled="disabled"/>
+                 </td>
+             </tr>
+              <tr>
+                 <td>
+                    <p>10</p> 
+                 </td>
+                 <td>
+                    <p>Ikura</p> 
+                 </td>
+                 <td>
+                     <p>$31.00</p>   
+                 </td>
+                 <td>
+                     <p>12-200 ml jars</p>   
+                 </td>
+                 <td>
+                     <p>31</p>  
+                 </td>
+                 <td class="checkBoxes">
+                     <input type="checkbox" disabled="disabled"/>
+                 </td>
+             </tr>
+         </tbody>
+     </table>  
+</body>
+</html>

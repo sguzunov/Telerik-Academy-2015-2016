@@ -1,0 +1,98 @@
+﻿table {
+    border: 1px solid black;
+    border-collapse:collapse;  
+}
+td {
+    border:1px solid;
+}
+thead, tfoot {
+    background-color:#E6E6DA;
+}
+tfoot {
+    border:none;
+}
+#firstColumn {
+    width:90px;
+    text-align:center;
+    background-color:#E6E6DA;
+}
+#secondColumn {
+    width:290px;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color:#E6E6DA;
+}
+#thirdColumn {
+    width:140px;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color:#E6E6DA;
+}
+#fourthColumn {
+    width:140px;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color:#E6E6DA;
+}
+#fifthColumn {
+    width:170px;
+    padding-left:10px;
+    padding-top:5px;
+    padding-bottom:5px;
+    background-color:#E6E6DA;
+}
+#sixthColumn {
+    width:100px; 
+    text-align:center; 
+    background-color:#E6E6DA;  
+}
+.insert {
+    background-color:#E6E6DA;
+    padding-left:10px;
+    padding-bottom:5px;
+    padding-top:5px;
+}
+#firstPage {
+    background-image:url(startPage.png);
+    width:20px;
+    height:20px;
+    border-radius:5px;
+}
+#prevPage {
+    background-image:url(prevPage.png);
+    width:20px;
+    height:20px;
+    border-radius:5px;
+}
+#nextPage {
+    background-image:url(nextPage.png);
+    width:20px;
+    height:20px;
+    border-radius:5px;
+}
+#lastPage {
+    background-image:url(endPage.png);
+    width:20px;
+    height:20px;
+    border-radius:5px;
+}
+#status {
+    float:right;
+}
+.curious {
+    background-image:url(btn.jpg);
+    width:20px;
+    height:20px;
+    border-radius:5px;
+}
+.checkBoxes {
+    padding-left:10px;
+}
+#footerCell {
+    padding-bottom:7px;
+    padding-top:7px;
+}
+

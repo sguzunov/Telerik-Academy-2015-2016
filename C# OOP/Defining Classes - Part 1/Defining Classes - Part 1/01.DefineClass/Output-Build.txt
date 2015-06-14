@@ -1,0 +1,4 @@
+﻿1>------ Build started: Project: 01.DefineClassMobilePhone, Configuration: Debug Any CPU ------
+1>D:\Telerik academy\OOP\Defining Classes - Part 1\01.DefineClass\GSM.cs(7,24,7,32): warning CS0169: The field 'GSM.iphone4s' is never used
+1>  01.DefineClassMobilePhone -> D:\Telerik academy\OOP\Defining Classes - Part 1\01.DefineClass\bin\Debug\01.DefineClass.exe
+========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

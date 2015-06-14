@@ -1,0 +1,73 @@
+﻿html, body, div, h1, label, input, span, ul, li, button {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 14px;
+    font-family: Corbel;
+}
+
+body #root {
+    width: 350px;
+    border-left: 3px solid #000;
+    border-top: 3px solid #000;
+    border-radius: 15px 0 0 0;
+    margin: 5px;
+    padding-top: 25px;
+    padding-left: 25px;
+}
+
+.linear-gradient(@from-color,@from-position,@to-color,@to-position) {
+    background: @from-color; /* Old browsers */
+    background: -moz-linear-gradient(top, @from-color @from-position, @to-color @to-position); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(@from-position,@from-color), color-stop(@to-position,@to-color)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, @from-color @from-position,@to-color @to-position); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, @from-color @from-position,@to-color @to-position); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, @from-color @from-position,@to-color @to-position); /* IE10+ */
+    background: linear-gradient(to bottom, @from-color @from-position,@to-color @to-position); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@from-color', endColorstr='@to-color',GradientType=0 ); /* IE6-9 */
+}
+
+#root {
+    h1 {
+        font-size: 1.9em;
+        padding-left: 45px;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .box {
+        width: 250px;
+        border: 1px solid black;
+        border-radius: 5px;
+        .linear-gradient(#CBF7BE,20%,#E5D96E,70%);
+    }
+
+    .add-employee {
+        margin: 0;
+        padding: 15px;
+        text-align: right;
+
+       & > *{
+            padding:5px;
+        }
+
+       label{
+           font-weight:bold;
+       }
+
+       input{           
+           border:3px inset #CBF7BE;
+           border-radius:5px;
+           padding: 5px 15px;
+           background:none;
+           margin-bottom:5px;
+           width:150px;
+       }
+
+       
+    }
+}

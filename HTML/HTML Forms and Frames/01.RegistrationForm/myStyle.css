@@ -1,0 +1,43 @@
+﻿#footCell {
+     text-align:center;
+     background-color:#E0FFFF;
+}
+.centerAligned {
+    text-align:center;
+}
+.names {
+    width:280px;
+}
+table {
+    border-collapse:collapse;
+}
+#address {
+    width:250px;
+}
+#city {
+    width:180px;
+}
+#state {
+    width:70px;
+}
+#code {
+    width:70px;
+}
+#countries {
+    width:170px;
+}
+#phone {
+    width:50px;
+}
+#phone1 {
+    width:50px;
+}
+#phone2 {
+    width:150px;
+}
+#email {
+    width:250px;
+}
+#birthDate {
+    width:170px;
+}
