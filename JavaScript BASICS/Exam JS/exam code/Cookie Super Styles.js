@@ -3,7 +3,8 @@ function solve(args) {
 	var result={};
 	var inSelector=false;	
 	var selectorName='';
-	var finalResult=[];
+	var finalResult='';
+	var endResult='';
 
 	for(var i=0;i<code.length;i+=1){
 		var line=code[i];
@@ -14,6 +15,7 @@ function solve(args) {
 			selectorName=line;
 			continue;
 		}
+
 		if(inSelector){
 			if(!result[selectorName]){
 				result[selectorName]=selectorName;
@@ -26,27 +28,64 @@ function solve(args) {
 					selectorName='';
 				}
 				else{
-					result[selectorName]=mergeProperties(line,selectorName);
-					console.log(mergeProperties(line,selectorName));
-					return;
+					if(checkContains(line,selectorName)===-1){
+						result[selectorName]+=line;
+					}		
+					else{
+						result[selectorName]=mergeProperties(line,selectorName);
+					}												
 				}
 			}			
 		}		
 	} // end of for
 
-	function mergeProperties(line,name){		
+	function checkContains(line,name){
 		var propName=line.substring(0,line.indexOf(':'));
-	/*	var propContent=line.substring(line.indexOf(':')+1,line.indexOf(';'));
 		var content=result[name];
-		content=content.replace(propName+':[A-z];', propContent);*/
-		return propName+name;
-	}	
 
-	for(var j in result){
-		finalResult.push(result[j].replace(/;}/g, '}'));
-	}	
+		return content.indexOf(propName);
+	}
 
-	console.log(finalResult.join());
+	function mergeProperties(line,name){		
+		var content=result[name];
+		var propName=line.substring(0,line.indexOf(':'));
+		var propIndex=content.indexOf(propName);
+		var final='',
+		inProperty=false;
+		
+		for(var t=0;t<content.length-1;t+=1){
+			if(t===propIndex){
+				inProperty=true;
+			}
+
+			if(inProperty){
+				if(content[t]===';'){
+					inProperty=false;
+					continue;
+				}
+				continue;
+			}
+			final+=content[t];
+		}
+
+		return final+=line;
+	}	
+	
+	for(var ind in result){
+		finalResult+=result[ind];
+	}
+
+	for(var j=0;j<finalResult.length-1;j+=1){
+		if(finalResult[j]===';'&&finalResult[j+1]==='}'){
+			endResult+='}';
+			j+=1;
+		}
+		else{
+			endResult+=finalResult[j];
+		}
+	}
+
+	console.log(endResult);	
 }
 
 
