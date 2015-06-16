@@ -3,21 +3,22 @@ function Solve(params){
 	var lines=params,
 	i=0,
 	variables={};
-
+	
 	for(i;i<lines.length;i+=1){
-		lines[i]=lines[i].replace('def', '').replace('[', '_').replace(']', '_').replace(/\W+/g, ' ').trim();			
-
+		lines[i]=lines[i].replace('def', '').replace('[', '_').replace(']', '_').replace(/[^a-zA-Z0-9-_]+/g, ' ').trim();	
+		
 		 if(i!==lines.length-1){
 		 	var name=getVariableName(lines[i]);  // gets the name of the variable
 			var func=getOperation(lines[i]); // gets the operator	
-		 	variables[name]=getValue(lines[i],func);  // returns the value of the operation			
-		 			 	
-		 }
+		 	variables[name]=getValue(lines[i],func);  // returns the value depending on the operation		 	
+		 }		 
 		 else{
-	 		return variables;
+	 		var name=getVariableName(lines[i]);  // gets the name of the variable
+			var func=getOperationForFinal(lines[i]); // gets the operator	
+		 	return getValue(lines[i],func);;  // returns the value depending on the operation
 		 }
 	}
-
+	
 	// Separate functions
 
 	function getVariableName(line){
@@ -25,6 +26,16 @@ function Solve(params){
 		name =line.substring(0,firstSpace).trim();
 
 		return name;
+	}
+
+	function getOperationForFinal(line){
+		var firstUnderscore=line.indexOf('_');
+		if(firstUnderscore===0){
+			return 'arr';
+		}
+		else{
+			return line.substring(0,firstUnderscore);
+		}
 	}
 
 	function getOperation(line){
@@ -72,7 +83,7 @@ function Solve(params){
 					sum+=numbers[i];
 					counter+=1;
 				}
-				return sum/counter|0;					
+				return sum / counter | 0;					
 			}break;
 			case 'sum':{
 				var numbers=parseNumbers(line);
@@ -96,20 +107,20 @@ function Solve(params){
 
 
 	function parseNumbers(line){
-		var str=line.substring(line.indexOf('_')+1,line.length-1);
-
+		var str=line.substring(line.indexOf('_')+1,line.length-1).trim();
 		var values=str.split(' ');
-
-		values=values.map(function (item){
-			if(variables[item]){				
-				return variables[item];				
+		var res=[];
+		
+		for(var t=0;t<values.length;t+=1){
+			if(variables[values[t]]!==undefined){
+				res.push(variables[values[t]]);
 			}
 			else{
-				return parseInt(item);
+				res.push(parseInt(values[t]));
 			}
-		});
+		}
 
-		return values.reduce(flatten,[]);
+		return res.reduce(flatten,[]);
 	}	
 }
 
