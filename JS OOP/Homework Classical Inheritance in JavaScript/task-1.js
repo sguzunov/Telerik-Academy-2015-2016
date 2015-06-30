@@ -21,12 +21,13 @@ function solve() {
             var _firstname,
                 _lastname,
                 _age,
-                _fullname
+                _fullname;
             this.firstname = firstname;
             this.lastname = lastname;
             this.age = age;
             this.fullname;
         }
+        
         Object.defineProperty(Person.prototype, 'firstname', {
             get: function() {
                 return this._firstname;

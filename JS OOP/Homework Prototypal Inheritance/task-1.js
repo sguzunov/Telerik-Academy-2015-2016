@@ -59,6 +59,7 @@ Outputs:
 */
 function solve() {
     var domElement = (function() {
+        var pavel = 5;
         var domElement = {
             init: function(type) {
                 this.type = type;
