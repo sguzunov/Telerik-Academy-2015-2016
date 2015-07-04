@@ -82,24 +82,23 @@ function solve() {
         pushExamResults: function(results) {
             var i,
                 len;
-                if(results.length === 0){
-                    throw new Error('There are no elements in the array!');
-                }
-
-                if(!results instanceof(Array)){
-                    throw new Error("The argument must be array!");
-                }
+            if (results === 'undefined') {
+                throw new Error('There is no given argument!');
+            }
+            if (!Array.isArray(results)) {
+                throw new Error("The argument must be array!");
+            }
             for (i = 0, len = results.length; i < len; i += 1) {
-                var student = results[i];
-                var score = student.Score;
-                if (!isValidID(student.StudentID)) {
+                var currentId = results[i].StudentID,
+                    currentScore = results[i].score;
+                if (!isValidID(currentId) || !isContainedID(currentId,this.students.length)) {
                     throw new Error('Invalid student\'s ID');
                 }
-                if (!isRepeatingID(results)) {
-                    throw new Error('There is a repeating id in the list!');
-                }
-                if (isNaN(score) || score === 'undefined') {
+                if (isNaN(currentScore) || currentScore === 'undefined') {
                     throw new Error('The score is not a number!');
+                }
+                if (!isRepeatingID(currentId, results)) {
+                    throw new Error('There is a repeating id in the list!');
                 }
             }
             this.examResults = results.map(function(result) {
@@ -120,8 +119,7 @@ function solve() {
                 result,
                 finalResults = [];
             for (i = 0, len = this.students.length; i < len; i += 1) {
-                var student=this.students[i];
-
+                var student = this.students[i];
                 result = formFinalResult(student.id);
                 finalResults.push({
                     firstname: student.firstname,
@@ -130,12 +128,11 @@ function solve() {
                     result: result
                 });
             }
-
             finalResults = finalResults.sort(function(firstSudent, secondStudent) {
                 return firstSudent.result - secondStudent.result;
             });
             if (finalResults.length > 10) {
-                return finalResults.slice(0,10);
+                return finalResults.slice(0, 10);
             } else {
                 return finalResults.slice(0);
             }
@@ -182,14 +179,17 @@ function solve() {
         return examPoints + homeworksPoints;
     }
 
-    function isRepeatingID(results) {
+    function isRepeatingID(id, results) {
         var i,
-            j;
-        for (i = 0; i < results.length - 1; i += 1) {
-            for (j = 1; j < results.length; j += 1) {
-                if (results[i].studentID === results[j].studentID) {
-                    return false;
-                }
+            len,
+            counter = 0;
+        for (i = 0, len = results.length; i < len; i += 1) {
+            if(id === results[i].StudentID){
+                counter+=1;
+            }
+
+            if(counter > 1){
+                return false;
             }
         }
         return true;
