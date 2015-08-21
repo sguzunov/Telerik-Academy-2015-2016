@@ -1,6 +1,5 @@
 ﻿namespace Matrix
 {
-
     public static class MatrixUtils
     {
         private const int ALL_DIRECTIONS = 8;

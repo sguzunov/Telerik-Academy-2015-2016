@@ -1,16 +1,20 @@
 ﻿namespace Matrix
 {
+    using log4net;
+    using log4net.Config;
     using System;
     using System.Text;
 
     public class SquareMatrix
     {
+        private static readonly ILog Log = LogManager.GetLogger(typeof(SquareMatrix));
+
         private const int INITIAL_DIRECTION_X = 1;
         private const int INITIAL_DIRECTION_Y = 1;
 
         private int size;
         private int[,] matrixField;
-
+                
         public SquareMatrix(int size)
         {
             this.Size = size;
@@ -27,11 +31,16 @@
             set
             {
                 if (value < 1 || value > 100)
-                {
-                    throw new ArgumentOutOfRangeException("Matrix size must be a between 1 and 100.");
+                {                    
+                    throw new ArgumentOutOfRangeException("Matrix size must be a between 1 and 100.");                    
                 }
 
                 this.size = value;
+
+                XmlConfigurator.Configure();
+                Log.Debug("Debug msg test");
+                Log.Error("Error msg test");
+
             }
         }
 
