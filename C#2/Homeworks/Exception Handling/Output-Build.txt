@@ -1,3 +1,0 @@
-﻿1>------ Build started: Project: 04.DownloadFile, Configuration: Debug Any CPU ------
-1>  04.DownloadFile -> c:\users\stoyan\documents\visual studio 2012\Projects\Exception Handling\04.DownloadFile\bin\Debug\04.DownloadFile.exe
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

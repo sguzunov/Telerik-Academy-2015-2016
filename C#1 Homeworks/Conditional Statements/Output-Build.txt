@@ -1,3 +1,0 @@
-﻿1>------ Build started: Project: 11.NumberAsWords, Configuration: Debug Any CPU ------
-1>  11.NumberAsWords -> D:\Telerik\Conditional Statements\11.NumberAsWords\bin\Debug\11.NumberAsWords.exe
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

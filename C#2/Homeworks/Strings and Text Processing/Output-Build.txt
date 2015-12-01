@@ -1,3 +1,0 @@
-﻿1>------ Build started: Project: 13.ReverseSentence, Configuration: Debug Any CPU ------
-1>  13.ReverseSentence -> C:\Users\Stoyan\Documents\Visual Studio 2012\Projects\Strings and Text Processing\13.ReverseSentence\bin\Debug\13.ReverseSentence.exe
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

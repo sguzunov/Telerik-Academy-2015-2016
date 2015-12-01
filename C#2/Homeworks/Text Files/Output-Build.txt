@@ -1,3 +1,0 @@
-﻿1>------ Build started: Project: 09.DeleteOddLines, Configuration: Debug Any CPU ------
-1>  09.DeleteOddLines -> D:\Telerik\C#2 homeworks\Text Files\09.DeleteOddLines\bin\Debug\09.DeleteOddLines.exe
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

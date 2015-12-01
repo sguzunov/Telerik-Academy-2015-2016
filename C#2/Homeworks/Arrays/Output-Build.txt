@@ -1,3 +1,0 @@
-﻿1>------ Build started: Project: 19.PermutationsOfSet, Configuration: Debug Any CPU ------
-1>  19.PermutationsOfSet -> D:\Telerik\C#2 homeworks\Arrays\19.PermutationsOfSet\bin\Debug\19.PermutationsOfSet.exe
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

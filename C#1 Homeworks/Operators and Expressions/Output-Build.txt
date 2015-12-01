@@ -1,3 +1,0 @@
-﻿1>------ Build started: Project: 15.BitsExchange, Configuration: Debug Any CPU ------
-1>  15.BitsExchange -> D:\Telerik\Operators and Expressions\BitsExchange\bin\Debug\BitsExchange.exe
-========== Build: 1 succeeded, 0 failed, 0 up-to-date, 0 skipped ==========

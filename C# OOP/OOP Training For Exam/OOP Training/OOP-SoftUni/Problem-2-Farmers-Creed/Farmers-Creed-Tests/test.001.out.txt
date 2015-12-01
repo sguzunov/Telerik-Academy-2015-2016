@@ -1,2 +1,0 @@
---TobaccoPlant cigarnik, Health: 12, Grown: No
---TobaccoPlant tutun, Health: 9, Grown: Yes
